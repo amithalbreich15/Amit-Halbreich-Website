@@ -4,9 +4,9 @@ import { ghPages } from 'vite-plugin-gh-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), ghPages()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Amit-Halbreich-Website', // Change this if deploying to a subfolder, e.g., '/my-app/'
+  base: '/Amit-Halbreich-Website/', // Change this if deploying to a subfolder, e.g., '/my-app/'
 });
