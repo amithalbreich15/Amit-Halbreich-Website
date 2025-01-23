@@ -8,5 +8,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Amit-Halbreich-Website/', // Change this if deploying to a subfolder, e.g., '/my-app/'
+  base: '/', // Change this if deploying to a subfolder, e.g., '/my-app/'
 });
