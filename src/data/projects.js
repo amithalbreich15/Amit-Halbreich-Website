@@ -16,11 +16,22 @@ export const projectsData = [
     date: "2022-2023",
     description: "A Java based game - Travel in infinite world, collect as many coins as you can, avoid the dragons and their fire blasting, stay alive!",
     image: "/images/projects_images/Tommy Adventure.png", // Corrected path
-    technologies: ["Java", "OOP Design Patterns", "Dano Game Lab", ],
+    technologies: ["Java", "OOP Design Patterns", "Dano Game Lab", "Factory", "Multi-Layer Programming"],
     role: "Core Developer",
     impact: "Developed using OOD principles",
     githubUrl: "https://github.com/amithalbreich15/PepseGame",
-    documentationUrl: "https://github.com/amithalbreich15/Lab-Messenger/blob/master/README.md"
+    documentationUrl: "https://github.com/amithalbreich15/PepseGame/blob/main/PepseGame_instructions.pdf"
+  },
+  {
+    title: "OOP Project: ASCII Art Converter",
+    date: "2022-2023",
+    description: "This project is an ASCII Art Converter that transforms image files into visually striking ASCII art representations. Users can specify the input image path, select ASCII characters for conversion, and define the desired resolution. The output can be displayed in the console or saved as an HTML file. Additionally, the project includes a user interface to simplify interaction.",
+    image: "/images/projects_images/ASCII.png", // Corrected path
+    technologies: ["Java", "OOP Design Patterns", "ASCII Art", "Iterators & Iterables", "Interfaces", "Shell Program User Interface"],
+    role: "Core Developer",
+    impact: "Developed using OOD principles",
+    githubUrl: "https://github.com/amithalbreich15/OOP-ASCII-Art-Converter/tree/main/src",
+    documentationUrl: "https://github.com/amithalbreich15/OOP-ASCII-Art-Converter/blob/main/ASCII_description.pdf"
   },
   {
     title: "OOP Project: Tic-Tac-Toe",

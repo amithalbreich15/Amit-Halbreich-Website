@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Code2, User, Mail, FileText, FolderKanban, Home } from 'lucide-react';
+import { Code, Code2, User, Mail, FileText, FolderKanban, Home } from 'lucide-react';
 
 export default function Navbar() {
   const location = useLocation();
