@@ -2,11 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { ghPages } from 'vite-plugin-gh-pages';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), ghPages()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/', // Change this if deploying to a subfolder, e.g., '/my-app/'
+  base: '/Amit-Halbreich-Website/', // This must match your GitHub repository name
 });
