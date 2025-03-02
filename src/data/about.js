@@ -19,6 +19,9 @@ export const skills = {
   ],
   "Professional Skills": [
     "Software Testing (QA)",
+    "CI/CD Pipelines (Jenkins & GitLab CI)",
+    "Containerization (Docker & Kubernetes)",
+    "Automation Tools - Cypress & Selenium Testing",
     "GUI & UI/UX Design",
     "Cloud Services (AWS)",
     "Communication Networks",

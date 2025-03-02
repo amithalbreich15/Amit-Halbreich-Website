@@ -154,15 +154,4 @@ export const projectsData = [
     githubUrl: "https://github.com/amithalbreich15/Identifying-TADs-using-Gaussian-HMM-Model-training",
     documentationUrl: "https://github.com/amithalbreich15/Identifying-TADs-using-Gaussian-HMM-Model-training/blob/main/Identifying%20TADs%20using%20Gaussian%20HMM%20Model%20training.pdf"
   },
-  {
-    title: "Cyber Range Training Platform",
-    date: "2018 - 2020",
-    description: "Led QA engineering for Cyberbit's flagship product - a sophisticated cyber security training platform. Developed and implemented comprehensive testing strategies for simulated cyber-attack scenarios.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Java", "Python", "Network Protocols", "Wireshark", "PAN Firewall"],
-    role: "QA Team Lead",
-    impact: "50% reduction in bugs",
-    githubUrl: "https://github.cs.huji.ac.il/amithalbreich/cyber-range",
-    documentationUrl: "/projects/cyber-range-case-study.pdf"
-  },
 ];
