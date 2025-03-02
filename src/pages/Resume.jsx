@@ -9,7 +9,7 @@ export default function Resume() {
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold text-gray-900">Resume</h1>
             <a
-              href="/public/PDFs/Resume AmitHalbreich.pdf"
+              href="/public/PDFs/Amit-Halbreich Resume.pdf"
               download
               className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
             >
