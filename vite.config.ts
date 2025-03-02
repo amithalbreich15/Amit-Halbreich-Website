@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/', // This must match your GitHub repository name
+  base: '/Amit-Halbreich-Website/', // This must match your GitHub repository name
 });
