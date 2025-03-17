@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
 function RobotModel(): JSX.Element {
   const modelPath = `${import.meta.env.BASE_URL}models/humanoid_robot_ai.glb`;
   const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={2.0} />; // Reduced scale from 2.0 to 1.75
+  return <primitive object={scene} scale={2.5} />; // Reduced scale from 2.0 to 1.75
 }
 
 function DeskModel(): JSX.Element {

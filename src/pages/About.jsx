@@ -29,7 +29,7 @@ export default function About() {
           </div>
 
           {/* Work Experience Section */}
-          <section className="bg-indigo-50 shadow-lg rounded-lg p-3 sm:p-4 md:p-6 border border-gray-200 mt-4 sm:mt-6">
+          <section className="bg-indigo-50 shadow-lg rounded-lg p-3 sm:p-4 md:p-6 border border-gray-200 mt-4 sm:mt-6 mb-3 sm:mb-4 mt-6 sm:mt-8">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-4 flex items-center">
               <Briefcase className="h-5 w-5 mr-2 text-indigo-600" />
               Work Experience
@@ -40,6 +40,22 @@ export default function About() {
                   <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{exp.role}</h3>
                   <p className="text-gray-600 text-sm">{exp.company}</p>
                   <p className="text-xs sm:text-sm text-gray-500">{exp.period}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-indigo-50 shadow-lg rounded-lg p-3 sm:p-4 md:p-6 border border-gray-200 sm:px-4 mb-3 sm:mb-4 mt-6 sm:mt-8">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-4 flex items-center">
+              <GraduationCap className="h-5 w-5 mr-2 text-indigo-600" />
+              Education
+            </h2>
+            <div className="space-y-3 sm:space-y-4">
+              {education.map((edu, index) => (
+                <div key={index} className="border-l-2 border-indigo-200 pl-2 sm:pl-3 md:pl-4">
+                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{edu.degree}</h3>
+                  <p className="text-gray-600 text-sm">{edu.school}</p>
+                  <p className="text-xs sm:text-sm text-gray-500">{edu.period}</p>
                 </div>
               ))}
             </div>
@@ -73,21 +89,6 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
                 <SkillCategory key={category} title={category} skills={skillList} />
-              ))}
-            </div>
-          </section>
-          <section className="bg-indigo-50 shadow-lg rounded-lg p-3 sm:p-4 md:p-6 border border-gray-200">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-4 flex items-center">
-              <GraduationCap className="h-5 w-5 mr-2 text-indigo-600" />
-              Education
-            </h2>
-            <div className="space-y-3 sm:space-y-4">
-              {education.map((edu, index) => (
-                <div key={index} className="border-l-2 border-indigo-200 pl-2 sm:pl-3 md:pl-4">
-                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{edu.degree}</h3>
-                  <p className="text-gray-600 text-sm">{edu.school}</p>
-                  <p className="text-xs sm:text-sm text-gray-500">{edu.period}</p>
-                </div>
               ))}
             </div>
           </section>
