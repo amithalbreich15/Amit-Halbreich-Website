@@ -66,11 +66,13 @@ export default function Home() {
 }
 
 function RobotModel() {
-  const { scene } = useGLTF('/models/humanoid_robot_ai.glb'); // Replace with your model path
+  const modelPath = `${import.meta.env.BASE_URL}models/humanoid_robot_ai.glb`;
+  const { scene } = useGLTF(modelPath);
   return <primitive object={scene} scale={2.5} />;
 }
 
 function DeskModel() {
-  const { scene } = useGLTF('/models/Desk.glb'); // Replace with your model path
+  const modelPath = `${import.meta.env.BASE_URL}models/Desk.glb`;
+  const { scene } = useGLTF(modelPath);
   return <primitive object={scene} scale={1.8} />;
 }
