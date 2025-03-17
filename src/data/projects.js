@@ -91,7 +91,7 @@ export const projectsData = [
     title: "Structure Segmentation in CT Scans",
     date: "2024",
     description: "Segmentation is an essential task in medical image processing. In this project you will familiarize yourselves with medical CT scans and with software environments for CT scans. You will explore the use of thresholding and multi-seeded region growing for the segmentation of the skeleton and the liver.",
-    image: `${import.meta.env.BASE_URL}images/projects_images/CT_Scans.png`,
+    image: `${import.meta.env.BASE_URL}images/projects_images/CT_Scan.png`,
     technologies: ["Python", "NumPy", "SciPy", "skimage", "Matplotlib", "Nibabel"],
     role: "Core Developer",
     impact: "Structure Segmentation in CT Scans",
