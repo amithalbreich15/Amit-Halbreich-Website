@@ -1,78 +1,80 @@
-import React from 'react';
+import React, { JSX, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
+import { primitive } from '@react-three/fiber';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
-    <div className="min-h-screen bg-white-to-br from-indigo-100 to-blue-200 flex flex-col items-center justify-center text-gray-900 relative overflow-hidden">
-      {/* SVG Header with Waving Emoji */}
-      <header className="text-center mb-12">
-        <h1 className="text-7xl font-bold text-indigo-800 mb-4 flex items-center justify-center">
-          Welcome to My Portfolio
-          <span className="ml-3 animate-wave text-7xl">👋🏼</span>
+    <div className="min-h-screen pt-16 sm:pt-20 md:pt-24 bg-gradient-to-br flex flex-col items-center justify-center text-gray-900 relative overflow-x-hidden px-4 sm:px-6 lg:px-8">
+      {/* Header with Waving Emoji */}
+      <header className="text-center mb-6 sm:mb-8 w-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-800 mb-2 sm:mb-3 flex items-center justify-center flex-wrap">
+          Welcome to My Portfolio <span className="ml-2 animate-wave text-2xl sm:text-3xl md:text-4xl lg:text-5xl">👋🏼</span>
         </h1>
-        <h1 className="text-xl font-medium mb-2 text-indigo-800">
-            Hi, I'm Amit Halbreich - A passionate Software Developer! 
-        </h1>
-        <h1 className="text-xl font-medium mb-2 text-indigo-800">
-            Explore my projects, learn about my skills, and connect with me!
-        </h1>
+        <p className="text-sm sm:text-base md:text-lg font-medium text-indigo-800 px-2">
+          Hi, I'm Amit Halbreich - A passionate Software Developer!
+        </p>
+        <p className="text-sm sm:text-base md:text-lg font-medium text-indigo-800 px-2">
+          Explore my projects, learn about my skills, and connect with me!
+        </p>
       </header>
 
-      {/* 3D Robot Mascot */}
-      <div className="w-80 h-80 mb-10">
-      <h1 className="text-xl font-medium mb-2 text-indigo-800 text-center">
-            Spin me around!
-            <span className="ml-1 text-3xl">🌪️</span>
-        </h1>
-        <Canvas>
-          <ambientLight intensity={0.6} />
-          <directionalLight position={[0, 5, 5]} />
-          <OrbitControls enableZoom={false} />
-          <RobotModel />
-        </Canvas>
+      {/* 3D Robot Mascot - Larger size */}
+      <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 mb-4 sm:mb-6">
+        <div className="text-sm sm:text-base md:text-lg font-medium text-indigo-800 text-center mb-1">
+          Spin me around! <span className="ml-1 text-xl sm:text-2xl">🌪️</span>
+        </div>
+        <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading...</div>}>
+          <Canvas>
+            <ambientLight intensity={0.6} />
+            <directionalLight position={[0, 5, 5]} />
+            <OrbitControls enableZoom={false} />
+            <RobotModel />
+          </Canvas>
+        </Suspense>
       </div>
 
       {/* Profile Picture and Description */}
-      <div className="text-center max-w-lg">
-      <img
+      <div className="text-center max-w-xs sm:max-w-sm md:max-w-md px-4 mb-4 sm:mb-6">
+        <img
           src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
           alt="Amit Halbreich"
-          className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
+          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full mx-auto mb-2 sm:mb-4 border-4 border-white shadow-lg"
         />
-        <h1 className="text-xl font-medium mb-2 text-indigo-800">
+        <p className="text-sm sm:text-base md:text-lg font-medium text-indigo-800">
           Let's build something amazing together!
-        </h1>
-        <h1 className="text-xl font-medium mb-2 text-indigo-800">
+        </p>
+        <p className="text-sm sm:text-base md:text-lg font-medium text-indigo-800">
           With a background in software testing, data analysis, and development, I strive to contribute innovative solutions to every project.
-        </h1>
+        </p>
       </div>
 
-      {/* 3D Desk Model in Bottom Right */}
-      <div className="absolute bottom-20 right-0 w-64 h-64">
-        <h1 className="text-xl font-medium mb-2 text-indigo-800 text-center">
-            Spin me too!
-            <span className="text-3xl">🌪️</span>
-        </h1>
-        <Canvas>
-          <ambientLight intensity={0.6} />
-          <directionalLight position={[0, 5, 5]} />
-          <OrbitControls enableZoom={false} />
-          <DeskModel />
-        </Canvas>
+      {/* 3D Desk Model - Positioned in right bottom corner */}
+      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10 w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48">
+        <div className="text-sm sm:text-base md:text-lg font-medium text-indigo-800 text-center mb-1">
+          Spin me too! <span className="text-xl sm:text-2xl">🌪️</span>
+        </div>
+        <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading...</div>}>
+          <Canvas>
+            <ambientLight intensity={0.6} />
+            <directionalLight position={[0, 5, 5]} />
+            <OrbitControls enableZoom={false} />
+            <DeskModel />
+          </Canvas>
+        </Suspense>
       </div>
     </div>
   );
 }
 
-function RobotModel() {
+function RobotModel(): JSX.Element {
   const modelPath = `${import.meta.env.BASE_URL}models/humanoid_robot_ai.glb`;
   const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={2.5} />;
+  return <primitive object={scene} scale={2.0} />; // Increased scale from 1.5 to 2.5
 }
 
-function DeskModel() {
+function DeskModel(): JSX.Element {
   const modelPath = `${import.meta.env.BASE_URL}models/Desk.glb`;
   const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={1.8} />;
+  return <primitive object={scene} scale={1.5} />;
 }
