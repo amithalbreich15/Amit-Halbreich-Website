@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* Profile Picture and Description */}
-      <div className="text-center max-w-xs sm:max-w-sm md:max-w-md px-4 mb-8 sm:mb-10">
+      <div className="text-center max-w-xs sm:max-w-sm md:max-w-md px-4 mt-4 sm:mt-6 mb-3 sm:mb-4 mt-6 sm:mt-8">
         <img
           src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
           alt="Amit Halbreich"
@@ -89,5 +89,5 @@ function RobotModel(): JSX.Element {
 function DeskModel(): JSX.Element {
   const modelPath = `${import.meta.env.BASE_URL}models/Desk.glb`;
   const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={1.5} />;
+  return <primitive object={scene} scale={2.0} />;
 }
