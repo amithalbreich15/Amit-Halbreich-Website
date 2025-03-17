@@ -8,11 +8,11 @@ export default function Resume() {
         <div className="p-8">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold text-gray-900">Resume</h1>
-            <a
-              href="/public/PDFs/Amit-Halbreich Resume.pdf"
-              download
-              className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-            >
+              <a
+                href={`${import.meta.env.BASE_URL}public/PDFs/Amit_Halbreich_Resume.pdf`}
+                download
+                className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+              >
               <FileText className="h-5 w-5" />
               <span>Download Resume PDF</span>
             </a>
@@ -145,16 +145,16 @@ export default function Resume() {
                 Excellence Certificate
               </h2>
               <div className="flex flex-col items-center space-y-4">
-                <img 
-                  src="/images/Excellence Certificate.jpg" 
-                  alt="Excellence Certificate" 
-                  className="rounded-lg shadow-lg max-w-full h-auto"
-                />
-                <a
-                  href="/images/Excellence Certificate.jpg"
-                  download
-                  className="flex items-center space-x-2 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg hover:bg-indigo-100 transition-colors"
-                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/Excellence_Certificate.jpg`}
+                    alt="Excellence Certificate"
+                    className="rounded-lg shadow-lg max-w-full h-auto"
+                  />
+                  <a
+                    href={`${import.meta.env.BASE_URL}images/Excellence_Certificate.jpg`}
+                    download
+                    className="flex items-center space-x-2 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg hover:bg-indigo-100 transition-colors"
+                  >
                   <Download className="h-5 w-5" />
                   <span>Download Certificate</span>
                 </a>

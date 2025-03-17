@@ -32,7 +32,7 @@ export default function Home() {
       {/* Profile Picture and Description */}
       <div className="text-center max-w-lg">
         <img
-          src="/images/Amit Profile Picture.jpg"
+          src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
           alt="Amit Halbreich"
           className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
         />
@@ -58,11 +58,13 @@ export default function Home() {
 }
 
 function RobotModel() {
-  const { scene } = useGLTF('/models/humanoid_robot_ai.glb'); // Replace with your model path
+  const modelPath = `${import.meta.env.BASE_URL}models/humanoid_robot_ai.glb`;
+  const { scene } = useGLTF(modelPath);
   return <primitive object={scene} scale={2.5} />;
 }
 
 function DeskModel() {
-  const { scene } = useGLTF('/models/Desk.glb'); // Replace with your model path
+  const modelPath = `${import.meta.env.BASE_URL}models/Desk.glb`;
+  const { scene } = useGLTF(modelPath);
   return <primitive object={scene} scale={1.8} />;
 }

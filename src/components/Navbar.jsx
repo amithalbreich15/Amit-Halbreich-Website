@@ -14,10 +14,10 @@ export default function Navbar() {
             <Code2 className="h-6 w-6 text-indigo-600" />
              {/* Profile Picture */}
              <img
-              src="/images/Amit Profile Picture.jpg"
-              alt="Profile"
+              src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
+              alt="Amit Halbreich"
               className="h-10 w-10 rounded-full border border-gray-300 shadow-sm"
-            />
+             />  
             <span className="font-bold text-xl">Amit Halbreich</span>
           </Link>
           

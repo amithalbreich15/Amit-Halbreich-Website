@@ -35,8 +35,8 @@ export default function Home() {
 
       {/* Profile Picture and Description */}
       <div className="text-center max-w-lg">
-        <img
-          src="/images/Amit Profile Picture.jpg"
+      <img
+          src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
           alt="Amit Halbreich"
           className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
         />
