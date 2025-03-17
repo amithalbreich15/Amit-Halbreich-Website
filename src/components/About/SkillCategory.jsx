@@ -1,17 +1,23 @@
 import React from 'react';
 
-export default function SkillCategory({ title, skills }) {
+const SkillCategory = ({ title, skills }) => {
   return (
-    <div className="bg-indigo-50 p-6 rounded-xl shadow-md">
-      <h3 className="font-bold text-xl text-gray-900 mb-4">{title}</h3>
-      <ul className="space-y-3">
-        {skills.map((skill) => (
-          <li key={skill} className="flex items-center space-x-2">
-            <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
-            <span className="text-gray-700">{skill}</span>
-          </li>
+    <div className="bg-indigo-50 p-3 md:p-5 rounded-lg shadow-md border border-gray-200">
+      <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+        {title}
+      </h3>
+      <div className="flex flex-wrap gap-1 md:gap-2">
+        {skills.map((skill, index) => (
+          <span 
+            key={index}
+            className="px-2 py-1 bg-white text-indigo-700 text-xs md:text-sm rounded-full border border-indigo-200 shadow-sm mb-1"
+          >
+            {skill}
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   );
-}
+};
+
+export default SkillCategory;

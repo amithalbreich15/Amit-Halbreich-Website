@@ -1,15 +1,32 @@
 import React from 'react';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
-export default function SocialLink({ icon, href, label }) {
+const SocialLink = ({ icon, href, label }) => {
+  const getIcon = (iconName) => {
+    switch (iconName) {
+      case 'github':
+        return <Github size={20} />;
+      case 'linkedin':
+        return <Linkedin size={20} />;
+      case 'twitter':
+        return <Twitter size={20} />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <a
+    <a 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+      className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white text-indigo-600 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition-colors duration-300"
+      aria-label={label}
+      title={label}
     >
-      {icon}
-      <span>{label}</span>
+      {getIcon(icon)}
     </a>
   );
-}
+};
+
+export default SocialLink;

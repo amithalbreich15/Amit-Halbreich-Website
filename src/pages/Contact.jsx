@@ -12,6 +12,9 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  
+  // Toast notification state
+  const [notification, setNotification] = useState({ show: false, message: '', type: '' });
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -20,11 +23,25 @@ export default function Contact() {
     try {
       // Send form data to the backend
       const response = await axios.post('http://localhost:5000/send-email', formData);
-      alert(response.data.message);
+      setNotification({ 
+        show: true, 
+        message: response.data.message, 
+        type: 'success' 
+      });
       setFormData({ name: '', email: '', message: '' }); // Clear form
+      
+      // Hide notification after 3 seconds
+      setTimeout(() => setNotification({ show: false, message: '', type: '' }), 3000);
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again later.');
+      setNotification({ 
+        show: true, 
+        message: 'Failed to send message. Please try again later.', 
+        type: 'error' 
+      });
+      
+      // Hide notification after 3 seconds
+      setTimeout(() => setNotification({ show: false, message: '', type: '' }), 3000);
     }
   };
 
@@ -38,22 +55,39 @@ export default function Contact() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-24">
+      {/* Toast Notification */}
+      {notification.show && (
+        <div className={`fixed top-4 right-4 px-4 py-2 rounded-md shadow-md ${
+          notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'
+        } text-white`}>
+          {notification.message}
+        </div>
+      )}
+      
       <div className="flex flex-col md:flex-row gap-8">
         {/* Contact Information Section */}
         <div className="flex-1">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Get in Touch</h1>
           <div className="space-y-6">
             <ContactInfo 
-              icon={<Mail />}
-              {...contactInfo.email}
+              icon={<Mail className="h-6 w-6 text-indigo-600" />}
+              title={contactInfo.email.title}
+              content={contactInfo.email.content}
+              link={true}
+              href={`mailto:${contactInfo.email.content}`}
             />
             <ContactInfo 
-              icon={<Phone />}
-              {...contactInfo.phone}
+              icon={<Phone className="h-6 w-6 text-indigo-600" />}
+              title={contactInfo.phone.title}
+              content={contactInfo.phone.content}
+              link={true}
+              href={`tel:${contactInfo.phone.content.replace(/[^\d+]/g, '')}`}
             />
             <ContactInfo 
-              icon={<MapPin />}
-              {...contactInfo.location}
+              icon={<MapPin className="h-6 w-6 text-indigo-600" />}
+              title={contactInfo.location.title}
+              content={contactInfo.location.content}
+              link={false}
             />
           </div>
         </div>

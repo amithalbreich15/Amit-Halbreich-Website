@@ -22,11 +22,11 @@ export default function Navbar() {
           </Link>
           
           <div className="flex space-x-4 items-center">
-            <NavLink to="/" active={isActive('/')}>
+            <NavLink to="/Amit-Halbreich-Website" active={isActive('/Amit-Halbreich-Website')}>
               <Home className="h-5 w-5" />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/projects" active={isActive('/projects')}>
+            <NavLink to="/Amit-Halbreich-Website/projects" active={isActive('/Amit-Halbreich-Website/projects')}>
               <FolderKanban className="h-5 w-5" />
               <span>Projects</span>
             </NavLink>

@@ -68,13 +68,15 @@ export const education = [
   }
 ];
 
-export const socialLinks = {
-  github: {
+export const socialLinks = [
+  {
+    icon: "github",
     href: "https://github.com/amithalbreich15",
     label: "GitHub"
   },
-  linkedin: {
+  {
+    icon: "linkedin",
     href: "https://linkedin.com/in/amit-halbreich-780a66173",
     label: "LinkedIn"
   }
-};
+];

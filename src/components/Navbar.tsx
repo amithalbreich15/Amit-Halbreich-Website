@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo + Profile */}
-          <Link to="/projects" className="flex items-center space-x-2">
+          <Link to="/Amit-Halbreich-Website/projects" className="flex items-center space-x-2">
             <Code2 className="h-6 w-6 text-indigo-600" />
             <img
               src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
@@ -34,11 +34,11 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-4 items-center">
-            <NavLink to="/" active={isActive("/")}>
+            <NavLink to="/Amit-Halbreich-Website" active={isActive("/Amit-Halbreich-Website")}>
               <Home className="h-5 w-5" />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/projects" active={isActive("/projects")}>
+            <NavLink to="/Amit-Halbreich-Website/projects" active={isActive("/Amit-Halbreich-Website/projects")}>
               <FolderKanban className="h-5 w-5" />
               <span>Projects</span>
             </NavLink>

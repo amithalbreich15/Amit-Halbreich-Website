@@ -23,9 +23,9 @@ export default function Projects() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
-      <div className="text-center mb-12 md:mb-16">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-indigo-800 mb-4 flex items-center justify-center">
+    <div className="max-w-7xl mx-auto px-4 pt-12 pb-16 sm:pt-16 md:pt-20 md:pb-24">
+      <div className="text-center mb-12 md:mb-16 mt-6 sm:mt-8">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-indigo-800 mb-4 mt-6 sm:mt-8 flex items-center justify-center">
           📚 My Projects 📚
         </h1>
         <p className="text-base sm:text-lg md:text-xl font-medium text-indigo-800">
