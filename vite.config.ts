@@ -19,6 +19,6 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/'
+  base: '/Amit-Halbreich-Website/'
 });
 
