@@ -14,7 +14,6 @@ import {
 
 const BASE_URL = import.meta.env.BASE_URL;
 
-import { ReactElement } from "react";
 
 export default function Resume(): ReactElement {
   return (
@@ -143,7 +142,7 @@ interface WorkExperienceProps {
   duration: string;
   description: string;
 }
-function WorkExperience({ title, company, duration, description }: WorkExperienceProps): JSX.Element {
+function WorkExperience({ title, company, duration, description }: WorkExperienceProps): ReactElement {
   return (
     <div className="mb-3">
       <p className="font-bold text-gray-900">{title} | {company} | {duration}</p>
@@ -155,7 +154,9 @@ function WorkExperience({ title, company, duration, description }: WorkExperienc
 interface SkillListProps {
   skills: string[];
 }
-function SkillList({ skills }: SkillListProps): JSX.Element {
+import { ReactElement } from "react";
+
+function SkillList({ skills }: SkillListProps): ReactElement {
   return (
     <ul className="list-disc pl-5 space-y-2 text-gray-700 text-sm sm:text-base">
       {skills.map((skill, index) => (
