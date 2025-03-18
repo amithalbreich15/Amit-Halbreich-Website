@@ -143,6 +143,115 @@ export const projectsData = [
     documentationUrl: "https://github.com/amithalbreich15/OS-Virtual-Memory-Hierarchical-Page-Tables/blob/main/README.md"
   },
   {
+    title: "Image Processing: Image Representations, Intensity Transformations & Quantization",
+    description: "The main purpose of this exercise is to get you acquainted with NumPy and some image processing facilities. This exercise covers: • Loading grayscale and RGB image representations. • Displaying figures and images. • Transforming RGB color images back and forth from the YIQ color space. • Performing intensity transformations: histogram equalization. • Performing optimal quantization.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Image_Representation.jpg`,
+    technologies: ["Python", "Pyplot", "PyTorch", "OpenCV", "NumPy"],
+    role: "Core Developer",
+    impact: "Image Processing Techniques",
+    githubUrl: "https://github.com/amithalbreich15/Image-Processing-Image-Representations-Intensity-Transformations-and-Quantization",
+    documentationUrl: "https://github.com/amithalbreich15/Image-Processing-Image-Representations-Intensity-Transformations-and-Quantization/blob/main/ex1_IP.pdf"
+  },
+  {
+    title: "Image Processing: Fourier Transform and Convolution",
+    date: "2022 - 2023",
+    description: "The purpose of this exercise is to help you understand the concept of the frequency domain by performing simple manipulations on sounds and images. This exercise covers: • Implementing Discrete Fourier Transform (DFT) on 1D and 2D signals. • Performing sound fast forward. • Performing image derivative",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Convolution.png`,
+    technologies: ["Python", "Pyplot", "PyTorch", "OpenCV", "NumPy"],
+    role: "Core Developer",
+    impact: "Fourier Transform & Convolution Techniques",
+    githubUrl: "https://github.com/amithalbreich15/Image-Processing-Fourier-Transform-and-Convolution",
+    documentationUrl: "https://github.com/amithalbreich15/Image-Processing-Fourier-Transform-and-Convolution/blob/main/Fourier%20Transform%20%26%20Convolution.pdf"
+  },
+  {
+    title: "Image Processing: Image Pyramids & Pyramid Blending",
+    date: "2022 - 2023",
+    description: "This exercise deals with image pyramids, low-pass and band-pass filtering, and their application in image blending. In this exercise you will construct Gaussian and Laplacian pyramids, use these to implement pyramid blending, and finally compare the blending results when using different filters in the various expand and reduce operations.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Pyramid.jpg`,
+    technologies: ["Python", "Pyplot", "PyTorch", "OpenCV", "NumPy"],
+    role: "Core Developer",
+    impact: "Image Pyramids & Pyramid Blending Techniques",
+    githubUrl: "https://github.com/amithalbreich15/Image-Processing-Image-Pyramids-and-Pyramid-Blending/blob/main/sol3.py",
+    documentationUrl: "https://github.com/amithalbreich15/Image-Processing-Image-Pyramids-and-Pyramid-Blending/blob/main/IMPR_Ex3_2022.pdf"
+  },
+  {
+    title: "Image Processing: Panorama Registration & Stitching",
+    date: "2022 - 2023",
+    description: "In this exercise you will be guided through the steps discussed in class to perform automatic ”Stereo Mosaicking”. The input of such an algorithm is a sequence of images scanning a scene from left to right (due to camera rotation and/or translation - we assume rigid transform between images), with significant overlap in the field of view of consecutive frames. This exercise covers the following steps: • Registration: The geometric transformation between each consecutive image pair is found by detecting Harris feature points, extracting their MOPS-like descriptors, matching these descriptors between the pair and fitting a rigid transformation that agrees with a large set of inlier matches using the RANSAC algorithm. • Stitching: Combining strips from aligned images into a sequence of panoramas. Global motion will be compensated, and the residual parallax, as well as other motions will become visible.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Panorama.png`,
+    technologies: ["Python", "Pyplot", "PyTorch", "OpenCV", "NumPy"],
+    role: "Core Developer",
+    impact: "Image Pyramids & Pyramid Blending Techniques",
+    githubUrl: "https://github.com/amithalbreich15/Image-Processing-Panorama-Registration-and-Stitching/blob/main/sol4.py",
+    documentationUrl: "https://github.com/amithalbreich15/Image-Processing-Panorama-Registration-and-Stitching/blob/main/Panorama%20Registration%20%26%20Stitching.pdf"
+  },
+  {
+    title: "C++ Workshop: AVL Tree Stack & Apartment Search Utility",
+    date: "2022 - 2023",
+    description: "This project is a comprehensive implementation exercise for C++ programming, focusing on data structures, algorithm efficiency, and leveraging STL features. Developed as part of the Hebrew University of Jerusalem's Computer Science and Engineering curriculum, it introduces advanced programming techniques while solving practical problems like apartment searching.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/AVL_Tree_Rebalancing.svg`,
+    technologies: ["C++", "STL", "AVL", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C++ Programming",
+    githubUrl: "https://github.com/amithalbreich15/CPP-Workshop-AVL-Tree-Stack-and-Apartment-Search-Utility/tree/main",
+    documentationUrl: "https://github.com/amithalbreich15/CPP-Workshop-AVL-Tree-Stack-and-Apartment-Search-Utility/blob/main/CPP-Workshop-AVL-Tree-Stack-and-Apartment-Search-Utility.pdf"
+  },
+  {
+    title: "C++ Workshop: Handwritten Digit Recognition Neural Network",
+    date: "2022 - 2023",
+    description: "This project focuses on the implementation of a neural network to recognize handwritten digits (0-9) based on their grayscale images. The network is implemented using C++, without relying on external machine learning libraries, highlighting foundational programming principles in neural networks, numerical computations, and object-oriented design.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/NeuralNetwork.jpg`,
+    technologies: ["C++", "Machine Learning", "Neural Networks", "Digit Recognition", , "MNIST Dataset", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C++ Programming",
+    githubUrl: "https://github.com/amithalbreich15/CPP-Workshop-Handwritten-Digit-Recognition-Neural-Network",
+    documentationUrl: "https://github.com/amithalbreich15/CPP-Workshop-Handwritten-Digit-Recognition-Neural-Network/blob/main/README.md"
+  },
+  {
+    title: "C++ Workshop: Efficient Dynamic Static 'Vector Like' Implementation",
+    date: "2022 - 2023",
+    description: "This project implements a highly efficient, flexible vector-like container in C++, named vl_vector. The design optimally balances between stack and heap memory usage, offering improved runtime efficiency and minimal memory overhead. This exercise is part of the Hebrew University of Jerusalem's advanced C++ programming curriculum.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Vector.png`,
+    technologies: ["C++", "STL", "Heap & Stack", "Vector Like", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C++ Programming",
+    githubUrl: "https://github.com/amithalbreich15/CPP-Workshop-Efficient-Dynamic-Static-vl_vector-Implementation",
+    documentationUrl: "https://github.com/amithalbreich15/CPP-Workshop-Efficient-Dynamic-Static-vl_vector-Implementation/blob/main/README.md"
+  },
+  {
+    title: "C Workshop: Hash-Based Generic Data Structures Library",
+    date: "2022 - 2023",
+    description: "This project implements a generic data structures library in C, focusing on hash-based data structures, including hash tables and sets. The library emphasizes efficiency, memory management, and modular design, offering a solid foundation for data manipulation. The project was developed as part of the 'Programming Workshop in C & C++ (67312)' at the Hebrew University of Jerusalem, Rachel and Selim Benin School of Computer Science and Engineering.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Hashset.png`,
+    technologies: ["C", "Hashset", "Linked Lists", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C Programming",
+    githubUrl: "https://github.com/amithalbreich15/C-Workshop-Hash-Based-Generic-Data-Structures-Library",
+    documentationUrl: "https://github.com/amithalbreich15/C-Workshop-Hash-Based-Generic-Data-Structures-Library/blob/main/README.md"
+  },
+  {
+    title: "C Workshop: Pointers-to-Pointers, 2D-Arrays & Makefile",
+    date: "2022 - 2023",
+    description: "This project involves implementing a C library to support advanced operations on two-dimensional arrays (matrices) of type double. The library focuses on both functionality and efficiency, allowing the creation of matrices, concatenation by rows/columns, element access by indices, slicing submatrices, and more. All functionality is based on a defined matrix structure, which includes: 1. A dynamic two-dimensional array (double** data) for storing matrix values. 2. Fields for the number of rows (n_rows) and columns (n_columns).",
+    image: `${import.meta.env.BASE_URL}images/projects_images/3D_Array.png`,
+    technologies: ["C", "Pointers-to-Pointers", "Dynamic Memory Allocations", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C Programming",
+    githubUrl: "https://github.com/amithalbreich15/C-Workship-Pointers-to-Pointers-2D-Arrays-and-Makefile",
+    documentationUrl: "https://github.com/amithalbreich15/C-Workship-Pointers-to-Pointers-2D-Arrays-and-Makefile/blob/main/README.md"
+  },
+  {
+    title: "C Workshop: Linked Lists, Read File, Dynamic Allocations & Pointers",
+    date: "2022 - 2023",
+    description: "This project involves implementing a C library that implements Doubly Linked List, which supports various operations on linked lists, including creation, insertion, deletion, and traversal. The library is designed to be efficient, flexible, and easy to use, providing a solid foundation for managing linked data structures in C programs.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Doubly-Linked-Lists.gif`,
+    technologies: ["C", "Doubly Linked List", "Dynamic Memory Allocations", "Data Structures", "Algorithms"],
+    role: "Core Developer",
+    impact: "Advanced C Programming",
+    githubUrl: "https://github.com/amithalbreich15/C-Workshop-Linked-Lists-Read-File-Dynamic-Allocations-and-Pointers",
+    documentationUrl: "https://github.com/amithalbreich15/C-Workshop-Linked-Lists-Read-File-Dynamic-Allocations-and-Pointers/blob/main/ex2.pdf"
+  },
+  {
     title: "Identifying TADs using Gaussian HMM Model training",
     description: "This project presents a computational approach to identify and characterize Topologically Associating Domains (TADs) within chromosomal structures using a Gaussian Hidden Markov Model (HMM). The study leverages high-resolution chromatin interaction data from Hi-C experiments to reveal the 3D genome architecture. Our HMM-based methodology effectively models chromatin interaction patterns and predicts TAD boundaries with high accuracy.",
     date: "2024",
