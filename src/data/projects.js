@@ -47,7 +47,7 @@ export const projectsData = [
     title: "OOP Project: Tic-Tac-Toe",
     date: "2022-2023",
     description: "This project implements a customizable Tic-Tac-Toe Tournament in Java. The tournament involves two players competing in multiple rounds of Tic-Tac-Toe games. The board size and winning streak can be configured, and the tournament supports both human and automated players with varying strategies.",
-    image: `${import.meta.env.BASE_URL}images/projects_images/TicTacToe.jpg"`,
+    image: `${import.meta.env.BASE_URL}images/projects_images/TicTacToe.jpg`,
     technologies: ["Java", "OOP Design Patterns", "Interfaces", "Factory", "Multi-Layer Programming"],
     role: "Core Developer",
     impact: "Developed using OOD principles",
