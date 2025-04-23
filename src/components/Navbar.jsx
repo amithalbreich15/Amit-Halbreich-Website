@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           
           {/* Logo + Profile */}
-          <Link to="/projects" className="flex items-center space-x-2">
+          <Link to="/Amit-Halbreich-Website/projects" className="flex items-center space-x-2">
             <Code2 className="h-6 w-6 text-indigo-600" />
             <img
               src={`${import.meta.env.BASE_URL}images/Amit_Profile_Picture.jpg`}
@@ -25,23 +25,23 @@ export default function Navbar() {
 
           {/* Desktop Nav Links (Hidden on Mobile) */}
           <div className="hidden md:flex space-x-4 items-center">
-            <NavLink to="/" active={isActive('/Amit-Halbreich-Website/')}>
+            <NavLink to="/Amit-Halbreich-Website" active={isActive('/Amit-Halbreich-Website')}>
               <Home className="h-5 w-5" />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/projects" active={isActive('/Amit-Halbreich-Website/projects')}>
+            <NavLink to="/Amit-Halbreich-Website/projects" active={isActive('/Amit-Halbreich-Website/projects')}>
               <FolderKanban className="h-5 w-5" />
               <span>Projects</span>
             </NavLink>
-            <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')}>
+            <NavLink to="/Amit-Halbreich-Website/about" active={isActive('/Amit-Halbreich-Website/about')}>
               <User className="h-5 w-5" />
               <span>About</span>
             </NavLink>
-            <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
+            <NavLink to="/Amit-Halbreich-Website/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
               <FileText className="h-5 w-5" />
               <span>Resume</span>
             </NavLink>
-            <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
+            <NavLink to="/Amit-Halbreich-Website/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
               <Mail className="h-5 w-5" />
               <span>Contact</span>
             </NavLink>
@@ -60,23 +60,23 @@ export default function Navbar() {
       {/* Mobile Menu (Collapsible) */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md px-4 py-3">
-          <NavLink to="/" active={isActive('/Amit-Halbreich-Website/')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/Amit-Halbreich-Website" active={isActive('/Amit-Halbreich-Website')} onClick={() => setIsOpen(false)}>
             <Home className="h-5 w-5" />
             <span>Home</span>
           </NavLink>
-          <NavLink to="/projects" active={isActive('/Amit-Halbreich-Website/projects')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/Amit-Halbreich-Website/projects" active={isActive('/Amit-Halbreich-Website/projects')} onClick={() => setIsOpen(false)}>
             <FolderKanban className="h-5 w-5" />
             <span>Projects</span>
           </NavLink>
-          <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/Amit-Halbreich-Website/about" active={isActive('/Amit-Halbreich-Website/about')} onClick={() => setIsOpen(false)}>
             <User className="h-5 w-5" />
             <span>About</span>
           </NavLink>
-          <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/Amit-Halbreich-Website/resume" active={isActive('/Amit-Halbreich-Website/resume')} onClick={() => setIsOpen(false)}>
             <FileText className="h-5 w-5" />
             <span>Resume</span>
           </NavLink>
-          <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/Amit-Halbreich-Website/contact" active={isActive('/Amit-Halbreich-Website/contact')} onClick={() => setIsOpen(false)}>
             <Mail className="h-5 w-5" />
             <span>Contact</span>
           </NavLink>

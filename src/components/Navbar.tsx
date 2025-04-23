@@ -46,7 +46,7 @@ export default function Navbar() {
               <User className="h-5 w-5" />
               <span>About</span>
             </NavLink>
-            <NavLink to="/resume" active={isActive("/Amit-Halbreich-Website/resume")}>
+            <NavLink to="/Amit-Halbreich-Website/resume" active={isActive("/Amit-Halbreich-Website/resume")}>
               <FileText className="h-5 w-5" />
               <span>Resume</span>
             </NavLink>
