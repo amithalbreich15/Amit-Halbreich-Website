@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "git add . && git commit -m 'Deploy from VSCode' && git push origin main"
   },
   "dependencies": {
     "@react-three/drei": "^9.120.5",
