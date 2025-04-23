@@ -15,11 +15,11 @@ function App(): JSX.Element {
         <Navbar />
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} /> {/* Default Home route */}
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/Amit-Halbreich-Website" element={<Home />} /> {/* Default Home route */}
+            <Route path="/Amit-Halbreich-Website/projects" element={<Projects />} />
+            <Route path="/Amit-Halbreich-Website/about" element={<About />} />
+            <Route path="/Amit-Halbreich-Website/resume" element={<Resume />} />
+            <Route path="/Amit-Halbreich-Website/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
