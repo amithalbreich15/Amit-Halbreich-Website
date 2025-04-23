@@ -15,11 +15,11 @@ export default function App() {
         <Navbar />
         <div className="flex-grow">
           <Routes>
-            <Route path="/Amit-Halbreich-Website" element={<Home />} /> {/* Default Home Route */}
-            <Route path="/Amit-Halbreich-Website/projects" element={<Projects />} />
-            <Route path="/Amit-Halbreich-Website/about" element={<About />} />
-            <Route path="/Amit-Halbreich-Website/resume" element={<Resume />} />
-            <Route path="/Amit-Halbreich-Website/contact" element={<Contact />} />
+            <Route path="/Amit-Halbreich-Website/" element={<Home />} /> {/* Default Home Route */}
+            <Route path="/Amit-Halbreich-Website/projects/" element={<Projects />} />
+            <Route path="/Amit-Halbreich-Website/about/" element={<About />} />
+            <Route path="/Amit-Halbreich-Website/resume/" element={<Resume />} />
+            <Route path="/Amit-Halbreich-Website/contact/" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
