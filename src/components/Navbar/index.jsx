@@ -22,7 +22,7 @@ export default function Navbar() {
           </Link>
           
           <div className="flex space-x-4 items-center">
-            <NavLink to="/Amit-Halbreich-Website" active={isActive('/Amit-Halbreich-Website')}>
+            <NavLink to="/Amit-Halbreich-Website/projects" active={isActive('/Amit-Halbreich-Website/projects')}>
               <Home className="h-5 w-5" />
               <span>Home</span>
             </NavLink>
@@ -31,17 +31,17 @@ export default function Navbar() {
               <span>Projects</span>
             </NavLink>
             
-            <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')}>
+            <NavLink to="/Amit-Halbreich-Website/about" active={isActive('/Amit-Halbreich-Website/about')}>
               <User className="h-5 w-5" />
               <span>About</span>
             </NavLink>
             
-            <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
+            <NavLink to="/Amit-Halbreich-Website/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
               <FileText className="h-5 w-5" />
               <span>Resume</span>
             </NavLink>
             
-            <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
+            <NavLink to="/Amit-Halbreich-Website/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
               <Mail className="h-5 w-5" />
               <span>Contact</span>
             </NavLink>
