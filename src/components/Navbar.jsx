@@ -25,23 +25,23 @@ export default function Navbar() {
 
           {/* Desktop Nav Links (Hidden on Mobile) */}
           <div className="hidden md:flex space-x-4 items-center">
-            <NavLink to="/" active={isActive('/')}>
+            <NavLink to="/" active={isActive('/Amit-Halbreich-Website/')}>
               <Home className="h-5 w-5" />
               <span>Home</span>
             </NavLink>
-            <NavLink to="/projects" active={isActive('/projects')}>
+            <NavLink to="/projects" active={isActive('/Amit-Halbreich-Website/projects')}>
               <FolderKanban className="h-5 w-5" />
               <span>Projects</span>
             </NavLink>
-            <NavLink to="/about" active={isActive('/about')}>
+            <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')}>
               <User className="h-5 w-5" />
               <span>About</span>
             </NavLink>
-            <NavLink to="/resume" active={isActive('/resume')}>
+            <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
               <FileText className="h-5 w-5" />
               <span>Resume</span>
             </NavLink>
-            <NavLink to="/contact" active={isActive('/contact')}>
+            <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
               <Mail className="h-5 w-5" />
               <span>Contact</span>
             </NavLink>
@@ -60,23 +60,23 @@ export default function Navbar() {
       {/* Mobile Menu (Collapsible) */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md px-4 py-3">
-          <NavLink to="/" active={isActive('/')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/" active={isActive('/Amit-Halbreich-Website/')} onClick={() => setIsOpen(false)}>
             <Home className="h-5 w-5" />
             <span>Home</span>
           </NavLink>
-          <NavLink to="/projects" active={isActive('/projects')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/projects" active={isActive('/Amit-Halbreich-Website/projects')} onClick={() => setIsOpen(false)}>
             <FolderKanban className="h-5 w-5" />
             <span>Projects</span>
           </NavLink>
-          <NavLink to="/about" active={isActive('/about')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')} onClick={() => setIsOpen(false)}>
             <User className="h-5 w-5" />
             <span>About</span>
           </NavLink>
-          <NavLink to="/resume" active={isActive('/resume')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')} onClick={() => setIsOpen(false)}>
             <FileText className="h-5 w-5" />
             <span>Resume</span>
           </NavLink>
-          <NavLink to="/contact" active={isActive('/contact')} onClick={() => setIsOpen(false)}>
+          <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')} onClick={() => setIsOpen(false)}>
             <Mail className="h-5 w-5" />
             <span>Contact</span>
           </NavLink>

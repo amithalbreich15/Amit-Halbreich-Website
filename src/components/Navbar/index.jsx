@@ -31,17 +31,17 @@ export default function Navbar() {
               <span>Projects</span>
             </NavLink>
             
-            <NavLink to="/about" active={isActive('/about')}>
+            <NavLink to="/about" active={isActive('/Amit-Halbreich-Website/about')}>
               <User className="h-5 w-5" />
               <span>About</span>
             </NavLink>
             
-            <NavLink to="/resume" active={isActive('/resume')}>
+            <NavLink to="/resume" active={isActive('/Amit-Halbreich-Website/resume')}>
               <FileText className="h-5 w-5" />
               <span>Resume</span>
             </NavLink>
             
-            <NavLink to="/contact" active={isActive('/contact')}>
+            <NavLink to="/contact" active={isActive('/Amit-Halbreich-Website/contact')}>
               <Mail className="h-5 w-5" />
               <span>Contact</span>
             </NavLink>
