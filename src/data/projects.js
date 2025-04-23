@@ -11,6 +11,17 @@ export const projectsData = [
     documentationUrl: "https://github.com/amithalbreich15/Non-Invasive-Blood-Pressure-Measurement-using-Image-Processing-IR-Camera/blob/main/Project%20Book%20Amit%20Halbreich%20%26%20Michael%20Dik%20-%20Non-Invasive%20Blood%20Pressure%20Measurement%20using%20Image%20Processing%20%26%20IR%20Camera%20.pdf"
   },
   {
+    title: "Ads Widget - Web Application",
+    date: "2025",
+    description: "A responsive recommendation widget that integrates with the Taboola REST API to display both organic and sponsored content recommendations.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/Taboola.png`,
+    technologies: ["JavaScript (ES6)",  "CSS3", "HTML5", "REST API", "JSON"],
+    role: "Sole Developer",
+    impact: "Responsive Web Application Development",
+    githubUrl: "https://github.com/amithalbreich15/Ads-Widget",
+    documentationUrl: "https://github.com/amithalbreich15/Ads-Widget/blob/main/README.md"
+  },
+  {
     title: "OOP Project: Tommy's Adventure Game",
     date: "2022-2023",
     description: "A Java based game - Travel in infinite world, collect as many coins as you can, avoid the dragons and their fire blasting, stay alive!",
@@ -75,6 +86,17 @@ export const projectsData = [
     impact: "Reviews Scraping & Deep Analysis",
     githubUrl: "https://github.com/amithalbreich15/Navigating-the-Noise-of-Online-Hotel-Reviews",
     documentationUrl: "https://github.com/amithalbreich15/Navigating-the-Noise-of-Online-Hotel-Reviews/blob/main/writeup_AH_OM_OM.pdf"
+  },
+  {
+    title: "Backend Project: Apache Log Analyzer",
+    date: "2025",
+    description: "This Java application analyzes Apache web server logs to generate statistical reports about user behavior, including: Countries of origin (based on GeoIP), Operating systems used, Browsers used., and more. The application is designed to be efficient and scalable, capable of handling large log files while providing accurate and insightful analysis.",
+    image: `${import.meta.env.BASE_URL}images/projects_images/apache.png`,
+    technologies: ["Java", "JavaFX", "Apache Maven", "Apache Log", "Data Analysis", "Data Structures", "Algorithms", "Java Collections"],
+    role: "Sole Developer",
+    impact: "Backend Development & Data Analysis",
+    githubUrl: "https://github.com/amithalbreich15/Backend-Apache-Log-Analyzer",
+    documentationUrl: "https://github.com/amithalbreich15/Backend-Apache-Log-Analyzer/blob/main/README.md"
   },
   {
     title: "Neural Networks & Computer Vision Projects",
