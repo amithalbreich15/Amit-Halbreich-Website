@@ -84,7 +84,7 @@ npm run deploy
 **Amit Halbreich**
 
 * 📧 [Email](mailto:amit.halbreich.dev@gmail.com)
-* 💼 [LinkedIn](https://www.linkedin.com/in/amithalbreich)
+* 💼 [LinkedIn](www.linkedin.com/in/amit-halbreich-780a66173)
 * 💻 [GitHub](https://github.com/amithalbreich15)
 
 ---
